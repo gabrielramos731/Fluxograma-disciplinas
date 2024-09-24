@@ -1,7 +1,7 @@
 let disciplinas = new Map();
 disciplinas.set("icc",[[], ["alg-prog"]]);
 disciplinas.set("alg-prog",[["icc"], ["aeds"]]);
-disciplinas.set("aeds",[["alg-prog"], ["tbo","bd","ia"]]);
+disciplinas.set("aeds",[["alg-prog"], ["tbo","bd","ia","poo","osa","po","parad","cg","pdi","compiladores"]]);
 disciplinas.set("tbo",[["aeds"], ["paa"]]);
 disciplinas.set("osa",[["aeds"], ["bd2"]]);
 disciplinas.set("bd",[["aeds"], ["bd2"]]);
