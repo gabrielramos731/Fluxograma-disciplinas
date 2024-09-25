@@ -554,11 +554,6 @@ video {
   display: none;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -568,45 +563,20 @@ video {
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .h-\[100px\] {
   height: 100px;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-\[600px\] {
-  height: 600px;
-}
-
-.min-h-screen {
-  min-height: 100vh;
-}
-
-.w-full {
-  width: 100%;
+.h-screen {
+  height: 100vh;
 }
 
 .w-\[200px\] {
   width: 200px;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
-.basis-full {
-  flex-basis: 100%;
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -623,10 +593,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-3 {
@@ -648,6 +614,16 @@ video {
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -655,6 +631,80 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-1 {
+  outline-width: 1px;
+}
+
+.outline-2 {
+  outline-width: 2px;
+}
+
+.outline-8 {
+  outline-width: 8px;
+}
+
+.outline-4 {
+  outline-width: 4px;
+}
+
+.outline-current {
+  outline-color: currentColor;
+}
+
+.outline-inherit {
+  outline-color: inherit;
+}
+
+.outline-sky-200 {
+  outline-color: #bae6fd;
+}
+
+.outline-red-200 {
+  outline-color: #fecaca;
+}
+
+.outline-green-200 {
+  outline-color: #bbf7d0;
+}
+
+.outline-green-400 {
+  outline-color: #4ade80;
+}
+
+.outline-red-400 {
+  outline-color: #f87171;
+}
+
+.outline-sky-400 {
+  outline-color: #38bdf8;
+}
+
+.outline-green-300 {
+  outline-color: #86efac;
+}
+
+.outline-red-300 {
+  outline-color: #fca5a5;
+}
+
+.outline-sky-300 {
+  outline-color: #7dd3fc;
 }
 
 .\*\:mx-3 > * {
@@ -672,4 +722,16 @@ video {
 
 .\*\:p-2 > * {
   padding: 0.5rem;
+}
+
+.\*\:outline > * {
+  outline-style: solid;
+}
+
+.\*\:outline-1 > * {
+  outline-width: 1px;
+}
+
+.\*\:outline-inherit > * {
+  outline-color: inherit;
 }
