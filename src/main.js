@@ -88,9 +88,6 @@ divs.forEach((div) => {
     parentReq = disciplinas.get(targetId)[0];
     childReq = disciplinas.get(targetId)[1];
 
-    console.log(parentReq);
-    console.log(childReq);
-
     target.classList.add(...styleCurrent);
     stylePre(parentReq, "over");
     stylePos(childReq, "over");
