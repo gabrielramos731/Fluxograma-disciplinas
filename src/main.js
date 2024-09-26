@@ -58,46 +58,42 @@ disciplinas.set("tcc", [[], []]);
 disciplinas.set("opt3", [[], []]);
 disciplinas.set("opt5", [[], []]);
 
-let styleCurrent = ["outline-4", "outline-sky-300", "outline"];
-let styleChild = ["outline-4", "outline-green-300", "outline"];
-let styleParent = ["outline-4", "outline-red-300", "outline"];
+let styleMap = {
+  current: ["outline-4", "outline-sky-300", "outline"],
+  parent: ["outline-4", "outline-red-300", "outline"],
+  child: ["outline-4", "outline-green-300", "outline"],
+}
 
-function stylePre(parentReq, status) {
-  parentReq.forEach((item) => {
-    preReq = document.getElementById(item);
-    if (status === "over") preReq.classList.add(...styleParent);
-    else preReq.classList.remove(...styleParent);
+function styleElements(elements, type, add){
+  elements.forEach((id) => {
+    let element = document.getElementById(id);
+    element.classList[add ? 'add' : 'remove'](...styleMap[type]);
   });
 }
 
-function stylePos(childReq, status) {
-  childReq.forEach((item) => {
-    posReq = document.getElementById(item);
-    if (status === "over") posReq.classList.add(...styleChild);
-    else posReq.classList.remove(...styleChild);
-  });
-}
+let currentReqs = {
+  actual: [],
+  parentReq: [],
+  childReq: [],
+};
 
 let divs = document.querySelectorAll("div");
 divs.forEach((div) => {
   div.addEventListener("mouseover", (e) => {
-    let target = e.target;
-    let targetId = target.id;
+    
+    currentReqs.actual = e.target.id;
+    currentReqs.parentReq = disciplinas.get(currentReqs.actual)[0];
+    currentReqs.childReq = disciplinas.get(currentReqs.actual)[1];
 
-    // se colocar let ou var antes quebra
-    parentReq = disciplinas.get(targetId)[0];
-    childReq = disciplinas.get(targetId)[1];
-
-    target.classList.add(...styleCurrent);
-    stylePre(parentReq, "over");
-    stylePos(childReq, "over");
+    styleElements([currentReqs.actual], "current", true)
+    styleElements(currentReqs.parentReq, "parent", true)
+    styleElements(currentReqs.childReq, "child", true)
   });
 
   div.addEventListener("mouseout", (e) => {
-    let target = e.target;
-    target.classList.remove(...styleCurrent);
 
-    stylePre(parentReq, "out");
-    stylePos(childReq, "out");
+    styleElements([currentReqs.actual], "current", false)
+    styleElements(currentReqs.parentReq, "parent", false)
+    styleElements(currentReqs.childReq, "child", false)
   });
 });
