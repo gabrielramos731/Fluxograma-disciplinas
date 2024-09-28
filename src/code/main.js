@@ -58,6 +58,7 @@ disciplinas.set("tcc", [[], []]);
 disciplinas.set("opt3", [[], []]);
 disciplinas.set("opt5", [[], []]);
 
+// Estiliza elementos
 let styleMap = {
   current: ["outline-4", localStorage.getItem("theme") === "light" ? "outline-sky-300" : "outline-sky-400", "outline"],
   parent: ["outline-4", localStorage.getItem("theme") === "light" ? "outline-red-300" : "outline-red-400", "outline"],
