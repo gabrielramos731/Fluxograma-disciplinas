@@ -11,6 +11,7 @@
   <body class="flex size-full dark:bg-[#222831] dark:text-white">
     <section class="mx-auto flex flex-col items-center gap-6 p-20">
       <section class="flex w-full items-center justify-between">
+        <!-- Theme toggle -->
         <section class="ml-4">
           <span class="cursor-pointer">
             <svg
@@ -87,6 +88,7 @@
           </span>
         </section>
 
+        <!-- Legenda -->
         <article class="flex flex-col gap-2">
           <span
             class="rounded-lg px-2 text-center text-xl outline outline-2 outline-sky-300"
@@ -101,406 +103,1253 @@
             >Libera</span
           >
         </article>
-        <span></span>
+
         <!-- apenas para alinhar início/meio -->
+        <span></span>
       </section>
 
+      <!-- Fluxograma de disciplinas -->
       <main
         id="tree"
-        class="mx-auto flex items-start text-lg [&_article_div]:bg-slate-50 dark:[&_article_div]:bg-[#31363F]"
+        class="relative mx-auto flex items-start gap-4 text-lg transition-all ease-linear [&_article_div]:bg-slate-50 dark:[&_article_div]:bg-[#31363F]"
       >
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             1&ordm; Período
           </h2>
+
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="icc"
           >
-            Intodução a ciência da computação
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="currenColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Intodução a ciência da computação</p>
+            <span></span>
           </div>
+
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="c1"
           >
-            Cálculo I
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Cálculo I</p>
           </div>
+
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="ga"
           >
-            Geometria analítica
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Geometria analítica</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="ingles1"
           >
-            Inglês instrumental para computação I
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Inglês instrumental para computação I</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             2&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="alg-prog"
           >
-            algoritmos e programação
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Algoritmos e programação</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="c2"
           >
-            Cálculo de várias variáveis
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Cálculo de várias variáveis</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="algebra"
           >
-            Álgebra Linear
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Álgebra Linear</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="ingles2"
           >
-            Inglês instrumental para computação II
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Inglês instrumental para computação II</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="sd"
           >
-            Sistema digitais
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Sistema digitais</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="discreta"
           >
-            Matemática discreta
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Matemática discreta</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             3&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="aeds"
           >
-            Algoritmos e estutura de dados
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Algoritmos e estutura de dados</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="fisica1"
           >
-            Física clássica para computação
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Física clássica para computação</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="metodo"
           >
-            Metodologia científica
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Metodologia científica</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="arq1"
           >
-            Arquitetura dee computadores I
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Arquitetura dee computadores I</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="intro-graf"
           >
-            Introdução à teoria dos grafos
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Introdução à teoria dos grafos</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             4&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="tbo"
           >
-            Técnicas de Busca e Ordenação
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Técnicas de Busca e Ordenação</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="fisica2"
           >
-            Física moderna para computação
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Física moderna para computação</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="estatistica"
           >
-            Probabilidade e estatística
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Probabilidade e estatística</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="arq2"
           >
-            Arquitetura de computadores II
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Arquitetura de computadores II</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="poo"
           >
-            Programação orientada a objetos
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Programação orientada a objetos</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="analise"
           >
-            Análise numérica
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Análise numérica</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             5&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="osa"
           >
-            Organização e Sistemas de Arquivos
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Organização e Sistemas de Arquivos</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="po"
           >
-            Pesquisa operacional
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Pesquisa operacional</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="engenharia"
           >
-            Engenharia de software
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Engenharia de software</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="so"
           >
-            Sistemas operacionais
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Sistemas operacionais</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="web"
           >
-            Desenvolvimento web
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Desenvolvimento web</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="paa"
           >
-            Projeto e análise de algoritmos
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Projeto e análise de algoritmos</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             6&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="bd"
           >
-            Banco de dados
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Banco de dados</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="aps"
           >
-            Análise e projeto de sistemas
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Análise e projeto de sistemas</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="parad"
           >
-            Paradigmas de programação
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Paradigmas de programação</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="sb"
           >
-            Software básico
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Software básico</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="alg-graf"
           >
-            Algoritmos em grafos
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Algoritmos em grafos</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             7&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="bd2"
           >
-            Gerenciamento de aplicações de banco de dados
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Gerenciamento de aplicações de banco de dados</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="cg"
           >
-            Computação gráfica
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Computação gráfica</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="sis-dis"
           >
-            Sistemas distribuídos
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Sistemas distribuídos</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="redes"
           >
-            Redes de computadores
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Redes de computadores</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="lfa"
           >
-            Linguagens formais e autômatos
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Linguagens formais e autômatos</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="complexidade"
           >
-            Complexidade de problemas e aproximação
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Complexidade de problemas e aproximação</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             8&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="ia"
           >
-            Introdução à inteligência artificial
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Introdução à inteligência artificial</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="pdi"
           >
-            Introdução ao processamento digital de imagens
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Introdução ao processamento digital de imagens</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="compiladores"
           >
-            Compiladores
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Compiladores</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="projetos"
           >
-            Gerência de projetos
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Gerência de projetos</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="opt1"
           >
-            Optativa I
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Optativa I</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="opt2"
           >
-            Optativa II
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Optativa II</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             9&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="etica"
           >
-            Informática ética e sociedade
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Informática ética e sociedade</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="empreendedorismo"
           >
-            Empreendedorismo
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Empreendedorismo</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="si"
           >
-            Sistemas de informação
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Sistemas de informação</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="tcc"
           >
-            Projeto de trabalho de conclusão de curso
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Projeto de trabalho de conclusão de curso</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="opt3"
           >
-            Optativa III
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Optativa III</p>
           </div>
         </article>
 
         <article
-          class="flex flex-col gap-3 *:mx-3 *:rounded-lg *:border *:border-[#636c7e] *:p-2"
+          class="3 flex flex-col gap-3 *:rounded-lg *:border *:border-[#636c7e] [&_div]:px-2 [&_div]:pt-2"
         >
-          <h2 class="text-center font-semibold tracking-wide">
+          <h2 class="p-2 text-center font-semibold tracking-wide">
             10&ordm; Período
           </h2>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="adm"
           >
-            Administração
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Administração</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="opt4"
           >
-            Optativa IV
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Optativa IV</p>
           </div>
           <div
-            class="flex h-[100px] w-[200px] items-center justify-center text-center"
+            class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
             id="opt5"
           >
-            Optativa V
+            <div class="ml-auto">
+              <svg
+                class="tree-icon cursor-pointer fill-black dark:fill-white"
+                width="25px"
+                height="25px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 5C7 4.44772 7.44772 4 8 4C8.55228 4 9 4.44772 9 5C9 5.55228 8.55228 6 8 6C7.44772 6 7 5.55228 7 5ZM9 7.82929C10.1652 7.41746 11 6.30622 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.30622 5.83481 7.41746 7 7.82929V9V16C7 18.2091 8.79086 20 11 20H14.1707C14.5825 21.1652 15.6938 22 17 22C18.6569 22 20 20.6569 20 19C20 17.3431 18.6569 16 17 16C15.6938 16 14.5825 16.8348 14.1707 18H11C9.89543 18 9 17.1046 9 16V12.4649C9.58835 12.8052 10.2714 13 11 13H14.1707C14.5825 14.1652 15.6938 15 17 15C18.6569 15 20 13.6569 20 12C20 10.3431 18.6569 9 17 9C15.6938 9 14.5825 9.83481 14.1707 11H11C9.89543 11 9 10.1046 9 9V7.82929ZM16 12C16 12.5523 16.4477 13 17 13C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11C16.4477 11 16 11.4477 16 12ZM16 19C16 19.5523 16.4477 20 17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19Z"
+                />
+              </svg>
+            </div>
+            <p>Optativa V</p>
           </div>
         </article>
       </main>
+
+      <!-- visível ao clicar em tree-icon -->
+      <div
+        class="overlay fixed inset-0 z-50 mx-auto hidden size-full items-center justify-center"
+      >
+        <div
+          class="overlay-content mx-auto h-80 w-[1000px] rounded-lg bg-slate-300 p-8 dark:bg-[#262a31]"
+        ></div>
+      </div>
     </section>
 
     <script src="code/main.js"></script>

@@ -77,7 +77,7 @@ let currentReqs = {
   childReq: [],
 };
 
-let divs = document.querySelectorAll("div");
+let divs = document.querySelectorAll(".dsp");
 divs.forEach((div) => {
   div.addEventListener("mouseover", (e) => {
     currentReqs.actual = div.id;
@@ -95,3 +95,26 @@ divs.forEach((div) => {
     styleElements(currentReqs.childReq, "child", false);
   });
 });
+
+
+// Overlay
+let overlay = document.querySelector(".overlay");
+let treeIcons = document.querySelectorAll(".tree-icon");
+let overlayContent = document.querySelector(".overlay-content");
+let main = document.querySelector("main");
+
+treeIcons.forEach(treeIcon => {
+  treeIcon.addEventListener("click", () => {
+    overlay.classList.remove("hidden");
+    overlay.classList.add("flex");
+    main.classList.add("blur-sm");
+  });
+});
+
+overlay.addEventListener("click", (e) => {
+  if (!overlayContent.contains(e.target)) {
+    overlay.classList.add("hidden");
+    main.classList.remove("blur-sm");
+  }
+});
+
