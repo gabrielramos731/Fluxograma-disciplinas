@@ -59,15 +59,15 @@ disciplinas.set("opt3", [[], []]);
 disciplinas.set("opt5", [[], []]);
 
 let styleMap = {
-  current: ["outline-4", "outline-sky-300", "outline"],
-  parent: ["outline-4", "outline-red-300", "outline"],
-  child: ["outline-4", "outline-green-300", "outline"],
-}
+  current: ["outline-4", localStorage.getItem("theme") === "light" ? "outline-sky-300" : "outline-sky-400", "outline"],
+  parent: ["outline-4", localStorage.getItem("theme") === "light" ? "outline-red-300" : "outline-red-400", "outline"],
+  child: ["outline-4", localStorage.getItem("theme") === "light" ? "outline-green-300" : "outline-green-400", "outline"],
+};
 
-function styleElements(elements, type, add){
+function styleElements(elements, type, add) {
   elements.forEach((id) => {
     let element = document.getElementById(id);
-    element.classList[add ? 'add' : 'remove'](...styleMap[type]);
+    element.classList[add ? "add" : "remove"](...styleMap[type]);
   });
 }
 
@@ -80,20 +80,18 @@ let currentReqs = {
 let divs = document.querySelectorAll("div");
 divs.forEach((div) => {
   div.addEventListener("mouseover", (e) => {
-    
-    currentReqs.actual = e.target.id;
+    currentReqs.actual = div.id;
     currentReqs.parentReq = disciplinas.get(currentReqs.actual)[0];
     currentReqs.childReq = disciplinas.get(currentReqs.actual)[1];
 
-    styleElements([currentReqs.actual], "current", true)
-    styleElements(currentReqs.parentReq, "parent", true)
-    styleElements(currentReqs.childReq, "child", true)
+    styleElements([currentReqs.actual], "current", true);
+    styleElements(currentReqs.parentReq, "parent", true);
+    styleElements(currentReqs.childReq, "child", true);
   });
 
   div.addEventListener("mouseout", (e) => {
-
-    styleElements([currentReqs.actual], "current", false)
-    styleElements(currentReqs.parentReq, "parent", false)
-    styleElements(currentReqs.childReq, "child", false)
+    styleElements([currentReqs.actual], "current", false);
+    styleElements(currentReqs.parentReq, "parent", false);
+    styleElements(currentReqs.childReq, "child", false);
   });
 });
