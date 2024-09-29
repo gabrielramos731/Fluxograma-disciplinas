@@ -9,8 +9,10 @@
   </head>
 
   <body class="flex size-full dark:bg-[#222831] dark:text-white">
-    <section class="mx-auto flex flex-col items-center gap-6 p-20">
-      <section class="flex w-full items-center justify-between">
+    <section
+      class="overflow-container mx-auto flex flex-col items-center gap-6 p-20"
+    >
+      <header class="flex w-full items-center justify-between">
         <!-- Theme toggle -->
         <section class="ml-4">
           <span class="cursor-pointer">
@@ -89,7 +91,7 @@
         </section>
 
         <!-- Legenda -->
-        <article class="flex flex-col gap-2">
+        <article class="legenda flex flex-col gap-2">
           <span
             class="rounded-lg px-2 text-center text-xl outline outline-2 outline-sky-300"
             >Desejada</span
@@ -105,12 +107,11 @@
         </article>
 
         <!-- apenas para alinhar início/meio -->
-        <span></span>
-      </section>
+        <span class="dummy-alinhamento"></span>
+      </header>
 
       <!-- Fluxograma de disciplinas -->
       <main
-        id="tree"
         class="relative mx-auto flex items-start gap-4 text-lg transition-all ease-linear [&_article_div]:bg-slate-50 dark:[&_article_div]:bg-[#31363F]"
       >
         <article
@@ -140,7 +141,9 @@
                 />
               </svg>
             </div>
-            <p>Intodução a ciência da computação</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Intodução a ciência da computação
+            </p>
             <span></span>
           </div>
 
@@ -164,7 +167,7 @@
                 />
               </svg>
             </div>
-            <p>Cálculo I</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">Cálculo I</p>
           </div>
 
           <div
@@ -187,7 +190,9 @@
                 />
               </svg>
             </div>
-            <p>Geometria analítica</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Geometria analítica
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -209,7 +214,9 @@
                 />
               </svg>
             </div>
-            <p>Inglês instrumental para computação I</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Inglês instrumental para computação I
+            </p>
           </div>
         </article>
 
@@ -239,7 +246,9 @@
                 />
               </svg>
             </div>
-            <p>Algoritmos e programação</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Algoritmos e programação
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -261,7 +270,9 @@
                 />
               </svg>
             </div>
-            <p>Cálculo de várias variáveis</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Cálculo de várias variáveis
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -283,7 +294,9 @@
                 />
               </svg>
             </div>
-            <p>Álgebra Linear</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Álgebra Linear
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -305,7 +318,9 @@
                 />
               </svg>
             </div>
-            <p>Inglês instrumental para computação II</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Inglês instrumental para computação II
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -327,7 +342,9 @@
                 />
               </svg>
             </div>
-            <p>Sistema digitais</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Sistema digitais
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -349,7 +366,9 @@
                 />
               </svg>
             </div>
-            <p>Matemática discreta</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Matemática discreta
+            </p>
           </div>
         </article>
 
@@ -379,7 +398,9 @@
                 />
               </svg>
             </div>
-            <p>Algoritmos e estutura de dados</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Algoritmos e estutura de dados
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -401,7 +422,9 @@
                 />
               </svg>
             </div>
-            <p>Física clássica para computação</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Física clássica para computação
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -423,7 +446,9 @@
                 />
               </svg>
             </div>
-            <p>Metodologia científica</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Metodologia científica
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -445,7 +470,9 @@
                 />
               </svg>
             </div>
-            <p>Arquitetura dee computadores I</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Arquitetura dee computadores I
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -467,7 +494,9 @@
                 />
               </svg>
             </div>
-            <p>Introdução à teoria dos grafos</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Introdução à teoria dos grafos
+            </p>
           </div>
         </article>
 
@@ -497,7 +526,9 @@
                 />
               </svg>
             </div>
-            <p>Técnicas de Busca e Ordenação</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Técnicas de Busca e Ordenação
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -519,7 +550,9 @@
                 />
               </svg>
             </div>
-            <p>Física moderna para computação</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Física moderna para computação
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -541,7 +574,9 @@
                 />
               </svg>
             </div>
-            <p>Probabilidade e estatística</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Probabilidade e estatística
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -563,7 +598,9 @@
                 />
               </svg>
             </div>
-            <p>Arquitetura de computadores II</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Arquitetura de computadores II
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -585,7 +622,9 @@
                 />
               </svg>
             </div>
-            <p>Programação orientada a objetos</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Programação orientada a objetos
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -607,7 +646,9 @@
                 />
               </svg>
             </div>
-            <p>Análise numérica</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Análise numérica
+            </p>
           </div>
         </article>
 
@@ -637,7 +678,9 @@
                 />
               </svg>
             </div>
-            <p>Organização e Sistemas de Arquivos</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Organização e Sistemas de Arquivos
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -659,7 +702,9 @@
                 />
               </svg>
             </div>
-            <p>Pesquisa operacional</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Pesquisa operacional
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -681,7 +726,9 @@
                 />
               </svg>
             </div>
-            <p>Engenharia de software</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Engenharia de software
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -703,7 +750,9 @@
                 />
               </svg>
             </div>
-            <p>Sistemas operacionais</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Sistemas operacionais
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -725,7 +774,9 @@
                 />
               </svg>
             </div>
-            <p>Desenvolvimento web</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Desenvolvimento web
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -747,7 +798,9 @@
                 />
               </svg>
             </div>
-            <p>Projeto e análise de algoritmos</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Projeto e análise de algoritmos
+            </p>
           </div>
         </article>
 
@@ -777,7 +830,9 @@
                 />
               </svg>
             </div>
-            <p>Banco de dados</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Banco de dados
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -799,7 +854,9 @@
                 />
               </svg>
             </div>
-            <p>Análise e projeto de sistemas</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Análise e projeto de sistemas
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -821,7 +878,9 @@
                 />
               </svg>
             </div>
-            <p>Paradigmas de programação</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Paradigmas de programação
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -843,7 +902,9 @@
                 />
               </svg>
             </div>
-            <p>Software básico</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Software básico
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -865,7 +926,9 @@
                 />
               </svg>
             </div>
-            <p>Algoritmos em grafos</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Algoritmos em grafos
+            </p>
           </div>
         </article>
 
@@ -895,7 +958,9 @@
                 />
               </svg>
             </div>
-            <p>Gerenciamento de aplicações de banco de dados</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Gerenciamento de aplicações de banco de dados
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -917,7 +982,9 @@
                 />
               </svg>
             </div>
-            <p>Computação gráfica</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Computação gráfica
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -939,7 +1006,9 @@
                 />
               </svg>
             </div>
-            <p>Sistemas distribuídos</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Sistemas distribuídos
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -961,7 +1030,9 @@
                 />
               </svg>
             </div>
-            <p>Redes de computadores</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Redes de computadores
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -983,7 +1054,9 @@
                 />
               </svg>
             </div>
-            <p>Linguagens formais e autômatos</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Linguagens formais e autômatos
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1005,7 +1078,9 @@
                 />
               </svg>
             </div>
-            <p>Complexidade de problemas e aproximação</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Complexidade de problemas e aproximação
+            </p>
           </div>
         </article>
 
@@ -1035,7 +1110,9 @@
                 />
               </svg>
             </div>
-            <p>Introdução à inteligência artificial</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Introdução à inteligência artificial
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1057,7 +1134,9 @@
                 />
               </svg>
             </div>
-            <p>Introdução ao processamento digital de imagens</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Introdução ao processamento digital de imagens
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1079,7 +1158,7 @@
                 />
               </svg>
             </div>
-            <p>Compiladores</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">Compiladores</p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1101,7 +1180,9 @@
                 />
               </svg>
             </div>
-            <p>Gerência de projetos</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Gerência de projetos
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1123,7 +1204,7 @@
                 />
               </svg>
             </div>
-            <p>Optativa I</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">Optativa I</p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1145,7 +1226,7 @@
                 />
               </svg>
             </div>
-            <p>Optativa II</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">Optativa II</p>
           </div>
         </article>
 
@@ -1175,7 +1256,9 @@
                 />
               </svg>
             </div>
-            <p>Informática ética e sociedade</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Informática ética e sociedade
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1197,7 +1280,9 @@
                 />
               </svg>
             </div>
-            <p>Empreendedorismo</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Empreendedorismo
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1219,7 +1304,9 @@
                 />
               </svg>
             </div>
-            <p>Sistemas de informação</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Sistemas de informação
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1241,7 +1328,9 @@
                 />
               </svg>
             </div>
-            <p>Projeto de trabalho de conclusão de curso</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Projeto de trabalho de conclusão de curso
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1263,7 +1352,7 @@
                 />
               </svg>
             </div>
-            <p>Optativa III</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">Optativa III</p>
           </div>
         </article>
 
@@ -1293,7 +1382,9 @@
                 />
               </svg>
             </div>
-            <p>Administração</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">
+              Administração
+            </p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1315,7 +1406,7 @@
                 />
               </svg>
             </div>
-            <p>Optativa IV</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">Optativa IV</p>
           </div>
           <div
             class="dsp box-content flex h-[100px] w-[200px] flex-col items-center justify-start pb-5 text-center"
@@ -1337,7 +1428,7 @@
                 />
               </svg>
             </div>
-            <p>Optativa V</p>
+            <p class="flex flex-1 items-center pb-3 capitalize">Optativa V</p>
           </div>
         </article>
       </main>
@@ -1345,8 +1436,12 @@
       <!-- visível ao clicar em tree-icon -->
       <div class="overlay fixed inset-0 z-50 mx-auto hidden size-full p-8">
         <div
-          class="overlay-content w-screen rounded-lg bg-slate-300 p-8 dark:bg-[#262a31]"
-        ></div>
+          class="overlay-content w-screen rounded-lg bg-slate-300 p-6 dark:bg-[#31363F] sm:m-24"
+        >
+        <svg class="close-btn cursor-pointer ml-auto sm:hidden" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#6b768b"/>
+        </svg>
+      </div>
       </div>
     </section>
 

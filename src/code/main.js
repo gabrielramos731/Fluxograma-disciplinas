@@ -60,9 +60,27 @@ disciplinas.set("opt5", [[], []]);
 
 // Estiliza elementos
 let styleMap = {
-  current: ["outline-4", localStorage.getItem("theme") === "light" ? "outline-sky-300" : "outline-sky-400", "outline"],
-  parent: ["outline-4", localStorage.getItem("theme") === "light" ? "outline-red-300" : "outline-red-400", "outline"],
-  child: ["outline-4", localStorage.getItem("theme") === "light" ? "outline-green-300" : "outline-green-400", "outline"],
+  current: [
+    "outline-4",
+    localStorage.getItem("theme") === "light"
+      ? "outline-sky-300"
+      : "outline-sky-400",
+    "outline",
+  ],
+  parent: [
+    "outline-4",
+    localStorage.getItem("theme") === "light"
+      ? "outline-red-300"
+      : "outline-red-400",
+    "outline",
+  ],
+  child: [
+    "outline-4",
+    localStorage.getItem("theme") === "light"
+      ? "outline-green-300"
+      : "outline-green-400",
+    "outline",
+  ],
 };
 
 function styleElements(elements, type, add) {
@@ -97,18 +115,24 @@ divs.forEach((div) => {
   });
 });
 
-
 // Overlay
+let main = document.querySelector("main");
 let overlay = document.querySelector(".overlay");
 let treeIcons = document.querySelectorAll(".tree-icon");
 let overlayContent = document.querySelector(".overlay-content");
-let main = document.querySelector("main");
+let overflowContainer = document.querySelector(".overflow-container");
+let header = document.querySelector("header");
+let legenda = document.querySelector(".legenda"); // alinhamento da legenda
+let closeBtn = document.querySelector(".close-btn"); // alinhamento da legenda
 
-treeIcons.forEach(treeIcon => {
+treeIcons.forEach((treeIcon) => {
   treeIcon.addEventListener("click", () => {
     overlay.classList.remove("hidden");
     overlay.classList.add("flex");
     main.classList.add("blur-sm");
+    header.classList.add("blur-sm"); // alinhamento da legenda
+    legenda.classList.add("invisible"); // alinhamento da legenda
+    overflowContainer.classList.add("overflow-x-hidden"); // remove scroll no overlay
   });
 });
 
@@ -116,6 +140,17 @@ overlay.addEventListener("click", (e) => {
   if (!overlayContent.contains(e.target)) {
     overlay.classList.add("hidden");
     main.classList.remove("blur-sm");
+    header.classList.remove("blur-sm"); // alinhamento da legenda
+    legenda.classList.remove("invisible"); // alinhamento da legenda
+    overflowContainer.classList.remove("overflow-x-hidden"); // remove scroll no overlay
   }
+});
+
+closeBtn.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+  main.classList.remove("blur-sm");
+  header.classList.remove("blur-sm"); // alinhamento da legenda
+  legenda.classList.remove("invisible"); // alinhamento da legenda
+  overflowContainer.classList.remove("overflow-x-hidden"); // remove scroll no overlay
 });
 
