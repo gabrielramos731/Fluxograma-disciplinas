@@ -6,6 +6,8 @@
     <title>Fluxograma</title>
 
     <link rel="stylesheet" href="styles/output.css" />
+    <!-- <link rel="stylesheet" href="styles/tree.css"> -->
+    <link rel="stylesheet" href="styles/treeData.min.css">
   </head>
 
   <body class="flex size-full dark:bg-[#222831] dark:text-white">
@@ -1440,6 +1442,9 @@
         <div
           class="overlay-content w-screen rounded-lg bg-slate-300 p-6 dark:bg-[#31363F] sm:m-24"
         >
+          <div id="container">
+            <div id="tree"></div>
+          </div>
           <svg
             class="close-btn ml-auto cursor-pointer sm:hidden"
             width="30px"
@@ -1456,8 +1461,11 @@
         </div>
       </div>
     </section>
+    
 
-    <script src="code/main.js"></script>
+    <script type="module" src="code/main.js"></script>
+    <!-- <script type="module" src="code/treeData.js"></script> -->
     <script src="code/darkMode.js"></script>
+
   </body>
 </html>
