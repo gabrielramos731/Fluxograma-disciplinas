@@ -149,6 +149,7 @@ overlay.addEventListener("click", (e) => {
     overflowContainer.classList.remove("overflow-x-hidden"); // remove scroll no overlay
 
     document.querySelector(".tree").remove();
+    document.querySelector(".tree").remove();
   }
 });
 
@@ -160,26 +161,23 @@ closeBtn.addEventListener("click", () => {
   overflowContainer.classList.remove("overflow-x-hidden"); // remove scroll no overlay
 
   document.querySelector(".tree").remove();
+  document.querySelector(".tree").remove();
 });
 
 
 // Tree
 function TreeData(data, select) {
   var main = document.querySelector(select);
-
   var treecanvas = document.createElement("div");
   treecanvas.className = "tree";
-
   var treeCode = buildTree(data, Object.keys(data)[0]);
-
   treecanvas.innerHTML = treeCode;
-
   main.appendChild(treecanvas);
 }
 
 /* Recursive function to build tree structure :) */
 function buildTree(obj, node) {
-  var treeString = "<li><a href='#'>" + obj[node].value + "</a>",
+  var treeString = "<li class='flex-1'><a href='#'>" + obj[node].value + "</a>",
     sons = [];
 
   for (var i in obj) {
@@ -187,7 +185,7 @@ function buildTree(obj, node) {
   }
 
   if (sons.length > 0) {
-    treeString += "<ul>";
+    treeString += "<ul class='flex justify-center'>";
 
     for (var i in sons) {
       treeString += buildTree(obj, sons[i]);
@@ -195,7 +193,6 @@ function buildTree(obj, node) {
 
     treeString += "</ul>";
   }
-
   return treeString;
 }
 
@@ -226,10 +223,36 @@ function getTreeData(idDisciplina) {
     });
   }
 
-  console.log(treeObj);
-  return treeObj;
-}
 
+  // pos requisitos
+  let nomeDisciplinaPos = document.getElementById(idDisciplina).querySelector("p").textContent.trim();
+  let treeObjPos = {
+    [idDisciplina]: { value: nomeDisciplinaPos, parent: "" }, // Disciplina inicial não tem pai
+  };
+
+  // Inicializa uma fila para processar as disciplinas com seus pais
+  let queueDisciplinasPos = [{ id: idDisciplina, parent: "" }];
+
+  // Loop enquanto houver disciplinas na fila
+  while (queueDisciplinasPos.length > 0) {
+    // Remove a próxima disciplina da fila
+    let { id, parent } = queueDisciplinasPos.shift();
+
+    // Adiciona cada pré-requisito como filho da disciplina atual
+    disciplinas.get(id).posReq.forEach((preReqId) => {
+      let nomePreReq = document.getElementById(preReqId).querySelector("p").textContent.trim();
+
+      // Adiciona a disciplina pré-requisito no objeto treeObjPos
+      treeObjPos[preReqId] = { value: nomePreReq, parent: id };
+
+      // Adiciona a disciplina pré-requisito à fila para processamento posterior
+      queueDisciplinasPos.push({ id: preReqId, parent: id });
+    });
+  }
+
+  let trees = { treePre: treeObj, treePos: treeObjPos };
+  return trees;
+}
 
 
 treeIcons.forEach((treeIcon) => {
@@ -249,8 +272,8 @@ treeIcons.forEach((treeIcon) => {
       divId = e.target.parentElement.parentElement.parentElement.id;
     }
 
-    var tree = getTreeData(divId)
-    TreeData(tree, "#tree");
+    var trees = getTreeData(divId)
+    TreeData(trees.treePre, "#tree");
+    // TreeData(trees.treePos, "#tree");
   });
 });
-
