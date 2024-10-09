@@ -150,10 +150,13 @@ overlay.addEventListener("click", (e) => {
 
     document.querySelector(".tree").remove();
     document.querySelector(".tree").remove();
-    if
+
+    // Mantem pré-requisitos como padrão
+    btnTreeVis.textContent === "Ver Pré-requisitos" ? toggleTreeVis() : null;
   }
 });
 
+// Evento fechar overlay mobile
 closeBtn.addEventListener("click", () => {
   overlay.classList.add("hidden");
   main.classList.remove("blur-sm");
@@ -163,7 +166,9 @@ closeBtn.addEventListener("click", () => {
 
   document.querySelector(".tree").remove();
   document.querySelector(".tree").remove();
-  if
+
+  // Mantem pré-requisitos como padrão
+  btnTreeVis.textContent === "Ver Pré-requisitos" ? toggleTreeVis() : null;
 });
 
 
@@ -179,7 +184,7 @@ function TreeData(data, select) {
 
 /* Recursive function to build tree structure :) */
 function buildTree(obj, node) {
-  var treeString = "<li class='flex-1'><a href='#'>" + obj[node].value + "</a>",
+  var treeString = "<li class='flex-1 dark:last:before:border-white dark:before:border-white dark:after:border-white'><a href='#' class='dark:text-white dark:border-white'>" + obj[node].value + "</a>",
     sons = [];
 
   for (var i in obj) {
@@ -187,7 +192,7 @@ function buildTree(obj, node) {
   }
 
   if (sons.length > 0) {
-    treeString += "<ul class='flex justify-center'>";
+    treeString += "<ul class='flex justify-center dark:before:border-white'>";
 
     for (var i in sons) {
       treeString += buildTree(obj, sons[i]);
@@ -280,16 +285,15 @@ treeIcons.forEach((treeIcon) => {
   });
 });
 
+// Altera visibilidade da árvore
+let btnTreeVis = document.getElementById("btnTreeVis");
+
 function toggleTreeVis (){
   let treeReq = document.getElementById("containerPre");
   let treePos = document.getElementById("containerPos");
   treeReq.classList.toggle("hidden");
   treePos.classList.toggle("hidden");
+  btnTreeVis.textContent = btnTreeVis.textContent === "Ver Pré-requisitos" ? "Ver Subsequentes" : "Ver Pré-requisitos";
 }
 
-let btnTreeVis = document.getElementById("btnTreeVis");
-
-btnTreeVis.addEventListener("click", () => {
-  toggleTreeVis();
-  btnTreeVis.textContent = btnTreeVis.textContent === "Ver Pré-requisitos" ? "Ver Subsequentes" : "Ver Pré-requisitos";
-});
+btnTreeVis.addEventListener("click", toggleTreeVis);

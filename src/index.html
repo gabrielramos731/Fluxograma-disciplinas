@@ -1456,17 +1456,18 @@
                   fill="#6b768b"
                 />
             </svg>
-            <button id="btnTreeVis" class="flex flex-col gap-3 mt-10 bg-[#636c7e] px-9 py-3 rounded-lg">
-              <!-- <label for="Requisito"><input class="mr-3" type="radio" name="option" id="Requisito" checked>Requisitos</label> -->
+            <button id="btnTreeVis" class="text-black dark:text-white flex flex-col gap-3 mt-10 dark:bg-[#636c7e] bg-white px-9 py-3 rounded-lg hover:scale-95 transition-all shadow-2xl">
               <p>Ver Subsequentes</p>
             </button>
           </div>
-            <div id="containerPre" class="flex">
-              <div id="tree" class="min-w-[780px] flex-1 flex mx-auto flex-col-reverse sm:items-center sm:justify-center pb-16"></div>
-            </div>
-            <div id="containerPos" class="flex hidden">
-              <div id="treePos" class="min-w-[780px] flex-1 flex mx-auto flex-col-reverse sm:items-center sm:justify-center pb-16"></div>
-            </div>
+            <section class="mx-auto">
+              <div id="containerPre" class="">
+                <div id="tree" class="flex-1 flex mx-auto flex-col-reverse sm:justify-center pb-16"></div>
+              </div>
+              <div id="containerPos" class="hidden">
+                <div id="treePos" class="flex-1 flex mx-auto flex-col-reverse sm:justify-center pb-16"></div>
+              </div>
+            </section>
           <span></span>  <!-- alinhamento dummy -->
         </div>
       </div>
