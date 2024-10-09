@@ -150,6 +150,7 @@ overlay.addEventListener("click", (e) => {
 
     document.querySelector(".tree").remove();
     document.querySelector(".tree").remove();
+    if
   }
 });
 
@@ -162,6 +163,7 @@ closeBtn.addEventListener("click", () => {
 
   document.querySelector(".tree").remove();
   document.querySelector(".tree").remove();
+  if
 });
 
 
@@ -274,6 +276,20 @@ treeIcons.forEach((treeIcon) => {
 
     var trees = getTreeData(divId)
     TreeData(trees.treePre, "#tree");
-    // TreeData(trees.treePos, "#tree");
+    TreeData(trees.treePos, "#treePos");
   });
+});
+
+function toggleTreeVis (){
+  let treeReq = document.getElementById("containerPre");
+  let treePos = document.getElementById("containerPos");
+  treeReq.classList.toggle("hidden");
+  treePos.classList.toggle("hidden");
+}
+
+let btnTreeVis = document.getElementById("btnTreeVis");
+
+btnTreeVis.addEventListener("click", () => {
+  toggleTreeVis();
+  btnTreeVis.textContent = btnTreeVis.textContent === "Ver Pré-requisitos" ? "Ver Subsequentes" : "Ver Pré-requisitos";
 });
