@@ -1442,9 +1442,12 @@
         <div
           class="relative justify-between overflow-auto flex flex-col gap-12 overlay-content w-screen rounded-lg bg-slate-300 p-6 dark:bg-[#31363F] sm:m-2"
         >
-          <div class="sticky top-0 left-0 mb-6">
+          <div class="sticky top-0 left-0 mb-6 flex justify-between items-center">
+            <button id="btnTreeVis" class="text-black dark:text-white flex flex-col gap-3 dark:bg-[#636c7e] bg-white px-9 py-3 rounded-lg hover:scale-95 transition-all shadow-2xl">
+              Ver Subsequentes
+            </button>
             <svg
-                class="close-btn mr-auto cursor-pointer sm:hidden"
+                class="close-btn cursor-pointer sm:hidden"
                 width="30px"
                 height="30px"
                 viewBox="0 0 24 24"
@@ -1456,9 +1459,6 @@
                   fill="#6b768b"
                 />
             </svg>
-            <button id="btnTreeVis" class="text-black dark:text-white flex flex-col gap-3 mt-10 dark:bg-[#636c7e] bg-white px-9 py-3 rounded-lg hover:scale-95 transition-all shadow-2xl">
-              <p>Ver Subsequentes</p>
-            </button>
           </div>
             <section class="mx-auto">
               <div id="containerPre" class="">

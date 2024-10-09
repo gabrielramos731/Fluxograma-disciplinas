@@ -293,7 +293,7 @@ function toggleTreeVis (){
   let treePos = document.getElementById("containerPos");
   treeReq.classList.toggle("hidden");
   treePos.classList.toggle("hidden");
-  btnTreeVis.textContent = btnTreeVis.textContent === "Ver Pré-requisitos" ? "Ver Subsequentes" : "Ver Pré-requisitos";
+  btnTreeVis.textContent = btnTreeVis.textContent === "Ver Pré-requisitos" ? "Ver Subsequentes" : "Ver Pré-requisitos";  // faz fechar ao clicar no botão
 }
 
 btnTreeVis.addEventListener("click", toggleTreeVis);

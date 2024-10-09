@@ -966,6 +966,10 @@ video {
     margin: 0.5rem;
   }
 
+  .sm\:m-24 {
+    margin: 6rem;
+  }
+
   .sm\:hidden {
     display: none;
   }
