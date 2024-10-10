@@ -1,8 +1,8 @@
 # Fluxograma de disciplinas
----
+
 
 ## Sobre o Projeto
----
+
 
 Este projeto é voltado para auxiliar estudantes do IFNMG - Campus Montes Claros do curso de Ciência da Computação a terem uma visualização clara e interativa do fluxograma curricular do curso, permitindo que o usuário veja os requisitos completos de uma disciplina bem como as disciplinas subsequentes desta mesma.
 
@@ -24,7 +24,7 @@ Os requisitos e disciplinas subsequentes imediatas podem ser vizualizadas ao aci
 ![](src/imgs/tree.png)
 
 ## Tecnologias utilizadas
----
+
 
 <div style="display: inline_block">
   &nbsp; &nbsp; &nbsp; &nbsp;
@@ -32,7 +32,7 @@ Os requisitos e disciplinas subsequentes imediatas podem ser vizualizadas ao aci
 </div><br>
 
 ## Atualizações futuras
----
+
 
 - Alterar árvore completa ao selecionar pela própria árvore
 
